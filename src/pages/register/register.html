@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Register</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-md-4 offset-md-4>
+                <div ion-text color="primary" text-center>
+                    <ion-icon style="font-size: 5rem" name="contact"></ion-icon>
+                    <h5>REGISTER</h5>
+                </div>
+
+                <ion-list>
+                    <ion-item>
+                        <ion-label floating>Username</ion-label>
+                        <ion-input type="text" 
+                        [(ngModel)]="credentials.username"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label floating>Email</ion-label>
+                        <ion-input type="email" 
+                        [(ngModel)]="credentials.email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label floating>Password</ion-label>
+                        <ion-input type="password" 
+                        [(ngModel)]="credentials.password"></ion-input>
+                    </ion-item>
+                </ion-list>
+                
+                <div>
+                    <button ion-button round block (click)="register()">Daftar</button>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
